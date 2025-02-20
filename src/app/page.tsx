@@ -18,13 +18,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-[#0a0a1a] text-white p-8 pt-0">
       {/* Cabeçalho */}
-      <header
-        className="relative w-full max-w-6xl mx-auto h-72 bg-cover bg-center rounded-b-xl shadow-lg"
-        style={{
-          backgroundImage: "url('/fundo.jpg')",
-          backgroundPosition: "center",
-        }}
-      >
+      <header className="header">
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/3 bg-black bg-opacity-80 p-6 rounded-lg shadow-lg w-[95%] max-w-6xl">
           <h1 className="text-3xl font-bold">Felipe Ferreira de Sousa</h1>
           <p className="text-gray-300">
@@ -37,6 +31,7 @@ export default function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-600 text-xl"
+              title="LinkedIn"
             >
               <FaLinkedin />
             </a>
@@ -45,6 +40,7 @@ export default function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600 text-xl"
+              title="GitHub"
             >
               <FaGithub />
             </a>
